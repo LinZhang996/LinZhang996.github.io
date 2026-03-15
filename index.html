@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人主页</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "PingFang SC", sans-serif; color: #333; line-height: 1.6; }
+    header { background: #1a1a2e; color: white; padding: 40px 20px; text-align: center; }
+    header h1 { font-size: 2rem; }
+    header p { color: #aaa; margin-top: 8px; }
+    nav { background: #16213e; display: flex; justify-content: center; gap: 20px; padding: 12px; }
+    nav a { color: #e0e0e0; text-decoration: none; font-size: 0.95rem; }
+    nav a:hover { color: #4fc3f7; }
+    .container { max-width: 860px; margin: 40px auto; padding: 0 20px; }
+    section { margin-bottom: 50px; }
+    section h2 { font-size: 1.4rem; border-left: 4px solid #4fc3f7; padding-left: 12px; margin-bottom: 20px; }
+    .links a {
+      display: inline-block; margin: 8px 10px 8px 0;
+      padding: 10px 20px; border-radius: 6px;
+      background: #1a1a2e; color: white; text-decoration: none; font-size: 0.9rem;
+    }
+    .links a:hover { background: #4fc3f7; color: #000; }
+    .post { border: 1px solid #eee; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+    .post h3 { font-size: 1.05rem; margin-bottom: 6px; }
+    .post p { color: #666; font-size: 0.9rem; }
+    .post .date { font-size: 0.8rem; color: #999; margin-top: 8px; }
+    .resume-btn {
+      display: inline-block; padding: 12px 28px;
+      background: #4fc3f7; color: #000; border-radius: 6px;
+      text-decoration: none; font-weight: bold;
+    }
+    footer { text-align: center; padding: 20px; color: #999; font-size: 0.85rem; background: #f5f5f5; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>你的名字</h1>
+  <p>开发者 / 研究者 / 记录者</p>
+</header>
+
+<nav>
+  <a href="#about">关于我</a>
+  <a href="#posts">项目心得</a>
+  <a href="#resume">简历</a>
+  <a href="#links">我的主页</a>
+</nav>
+
+<div class="container">
+
+  <section id="about">
+    <h2>关于我</h2>
+    <p>你好！这里是我的个人主页，记录项目经历、技术心得，以及我的开源工作。</p>
+  </section>
+
+  <section id="posts">
+    <h2>项目心得</h2>
+
+    <!-- 每篇心得复制一个 .post 块 -->
+    <div class="post">
+      <h3>项目名称：XXX 系统开发</h3>
+      <p>这次项目中学到了 ... 遇到的最大挑战是 ... 解决方案是 ...</p>
+      <div class="date">2025-07-01</div>
+    </div>
+
+    <div class="post">
+      <h3>项目名称：数据集整理与发布</h3>
+      <p>在整理数据集过程中，发现了 ... 使用了 Hugging Face Datasets 库 ...</p>
+      <div class="date">2025-06-15</div>
+    </div>
+
+  </section>
+
+  <section id="resume">
+    <h2>个人简历</h2>
+    <p style="margin-bottom:16px">点击下方按钮下载我的最新简历：</p>
+    <!-- 把简历 PDF 上传到仓库，修改 href 路径 -->
+    <a class="resume-btn" href="resume.pdf" download>📄 下载简历 (PDF)</a>
+  </section>
+
+  <section id="links">
+    <h2>我的主页</h2>
+    <div class="links">
+      <!-- 替换为你的真实链接 -->
+      <a href="https://github.com/你的用户名" target="_blank">🐙 GitHub</a>
+      <a href="https://huggingface.co/你的用户名" target="_blank">🤗 Hugging Face</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2025 你的名字 · Hosted on GitHub Pages</p>
+</footer>
+
+</body>
+</html>
